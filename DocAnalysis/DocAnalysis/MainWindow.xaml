@@ -1,0 +1,20 @@
+﻿<Window x:Class="DocAnalysis.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DocAnalysis"
+        mc:Ignorable="d"
+        Title="Document Analysis" Height="258.947" Width="800" Icon="icon.png">
+	<DockPanel Margin="10,10,10,7">
+		<WrapPanel HorizontalAlignment="Center" DockPanel.Dock="Top" Margin="0,0,0,10">
+			<Button Name="btnOpenFile" Click="btnOpenFile_Click">Open file</Button>
+		</WrapPanel>
+		<TextBox  Name="txtEditor"  Foreground="Red" TextWrapping="Wrap"
+				   VerticalAlignment="Top"
+				   VerticalScrollBarVisibility="Auto"
+            HorizontalScrollBarVisibility="Auto"
+				   Height="158" Width="360" Background="#FF216855"/>
+		<TextBox Height="158" TextWrapping="Wrap" VerticalAlignment="Top" Width="383" Background="#FFC7DEC5"/>
+	</DockPanel>
+</Window>
